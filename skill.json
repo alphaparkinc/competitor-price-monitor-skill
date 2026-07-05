@@ -1,0 +1,50 @@
+{
+  "name": "competitor-price-monitor-skill",
+  "version": "1.0.0",
+  "description": "Analyze competitor pricing data, detect price changes, calculate price gaps, and generate dynamic repricing recommendations to stay competitive.",
+  "author": "alphaparkinc",
+  "category": "analytics",
+  "tags": [
+    "competitor",
+    "pricing",
+    "monitoring",
+    "repricing",
+    "intelligence"
+  ],
+  "inputs": {
+    "our_products": {
+      "type": "array",
+      "description": "Our products: [{id, name, price, cost, min_price}]."
+    },
+    "competitor_data": {
+      "type": "array",
+      "description": "Competitor prices: [{competitor, product_id, price, in_stock}]."
+    },
+    "strategy": {
+      "type": "string",
+      "enum": [
+        "beat",
+        "match",
+        "premium",
+        "value"
+      ],
+      "description": "Pricing strategy."
+    }
+  },
+  "outputs": {
+    "analysis": {
+      "type": "array",
+      "description": "Per-product competitive analysis with price gaps and positions."
+    },
+    "repricing_actions": {
+      "type": "array",
+      "description": "Recommended price changes."
+    },
+    "market_summary": {
+      "type": "object",
+      "description": "Overall market position summary."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
