@@ -1,8 +1,8 @@
 {
   "name": "competitor-price-monitor-skill",
   "version": "1.0.0",
-  "description": "Analyze competitor pricing data, detect price changes, calculate price gaps, and generate dynamic repricing recommendations to stay competitive.",
-  "author": "alphaparkinc",
+  "description": "GenPark AI Agent Skill - Analyze competitor pricing data, detect price changes, calculate price gaps, and generate dynamic repricing recommendations to stay competitive.",
+  "author": "genpark",
   "category": "analytics",
   "tags": [
     "competitor",
